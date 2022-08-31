@@ -9,13 +9,17 @@ runs:
   using: "composite"
   steps:
     - uses: actions/checkout@v3
+      shell: bash
     - uses: actions/setup-python@v2
+      shell: bash
     - name: Run pip-check-updates
       run: |
         pip install pip-check-updates
         pcu ${{ inputs.path }} -u
+      shell: bash
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v4
+      shell: bash
       with:
         commit-message: refresh deps
         committer: GitHub <noreply@github.com>
