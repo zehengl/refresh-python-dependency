@@ -24,3 +24,6 @@ runs:
         branch: pcu-pr
         delete-branch: true
         title: "[pcu] Refresh Deps"
+branding:
+  icon: 'box'
+  color: 'purple'
