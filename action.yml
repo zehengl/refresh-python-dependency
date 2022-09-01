@@ -1,10 +1,10 @@
-name: 'Refresh Python Dependency'
-description: 'Refresh your dependency files in a Python repo'
+name: "Refresh Python Dependency"
+description: "Refresh your dependency files in a Python repo"
 inputs:
-  patht:
-    description: 'dependency file'
+  path:
+    description: "dependency file"
     required: false
-    default: 'requirements.txt'
+    default: "requirements.txt"
 runs:
   using: "composite"
   steps:
@@ -26,5 +26,5 @@ runs:
         delete-branch: true
         title: "[pcu] Refresh Deps"
 branding:
-  icon: 'box'
-  color: 'purple'
+  icon: "box"
+  color: "purple"
