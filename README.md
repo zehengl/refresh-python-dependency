@@ -45,3 +45,7 @@ It will update the libraries specified in the file from `path`.
           - uses: zehengl/refresh-python-dependency@v0.1.3
             with:
               path: requirements-dev.txt
+
+## Credits
+
+- [Icon](https://www.iconfinder.com/icons/171269/refresh_icon) by PixelKit
