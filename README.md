@@ -6,7 +6,7 @@ A GitHub action to create a pull request for refreshing the dependency file in y
 
 ### Minimal
 
-    - uses: zehengl/refresh-python-dependency@v0.1.2
+    - uses: zehengl/refresh-python-dependency@v0.1.3
 
 It will update the libraries specified a `requirements.txt` file.
 
@@ -14,14 +14,30 @@ It will update the libraries specified a `requirements.txt` file.
 
 For PyPi
 
-    - uses: zehengl/refresh-python-dependency@v0.1.2
+    - uses: zehengl/refresh-python-dependency@v0.1.3
       with:
         path: requirements-dev.txt
 
 Or for Conda
 
-    - uses: zehengl/refresh-python-dependency@v0.1.2
+    - uses: zehengl/refresh-python-dependency@v0.1.3
       with:
         path: environment.yml
 
 It will update the libraries specified in the file from `path`.
+
+## Example
+
+    name: pcu
+    on:
+      push:
+        branches: [main]
+      schedule:
+        - cron: "0 12 * * 1"
+    jobs:
+      refreshDeps:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: zehengl/refresh-python-dependency@v0.1.3
+            with:
+              path: requirements-dev.txt
