@@ -1,3 +1,7 @@
+<div align="center">
+    <img src="https://cdn2.iconfinder.com/data/icons/flat-jewels-icon-set/512/0000_Refresh.png" alt="logo" height="196">
+</div>
+
 # refresh-python-dependency
 
 A GitHub action to create a pull request for refreshing the dependency file in your Python repository
