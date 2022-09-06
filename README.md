@@ -10,7 +10,7 @@ A GitHub action to create a pull request for refreshing the dependency file in y
 
 ### Minimal
 
-    - uses: zehengl/refresh-python-dependency@v0.1.3
+    - uses: zehengl/refresh-python-dependency@main
 
 It will update the libraries specified a `requirements.txt` file.
 
