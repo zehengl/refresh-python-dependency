@@ -18,7 +18,7 @@ runs:
       run: |
         pip install pip-check-updates
         pcu ${{ inputs.path }} -u
-        [[ "${{ inputs.extra_path }}" = true ]] && pcu ${{ inputs.extra_path }} -u || true
+        [[ -n "${{ inputs.extra_path }}" ]] && pcu ${{ inputs.extra_path }} -u || true
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v4
       with:
