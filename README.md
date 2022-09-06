@@ -18,17 +18,24 @@ It will update the libraries specified a `requirements.txt` file.
 
 For PyPi
 
-    - uses: zehengl/refresh-python-dependency@v0.1.3
+    - uses: zehengl/refresh-python-dependency@v0.2.0
       with:
         path: requirements-dev.txt
 
 Or for Conda
 
-    - uses: zehengl/refresh-python-dependency@v0.1.3
+    - uses: zehengl/refresh-python-dependency@v0.2.0
       with:
         path: environment.yml
 
 It will update the libraries specified in the file from `path`.
+
+Or with an extra dependency file
+
+    - uses: zehengl/refresh-python-dependency@v0.2.0
+      with:
+        path: requirements1.txt
+        extra_path: requirements2.txt
 
 ## Example
 
@@ -42,7 +49,7 @@ It will update the libraries specified in the file from `path`.
       refreshDeps:
         runs-on: ubuntu-latest
         steps:
-          - uses: zehengl/refresh-python-dependency@v0.1.3
+          - uses: zehengl/refresh-python-dependency@v0.2.0
             with:
               path: requirements-dev.txt
 
