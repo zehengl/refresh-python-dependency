@@ -56,3 +56,4 @@ Or with an extra dependency file
 ## Credits
 
 - [Icon](https://www.iconfinder.com/icons/171269/refresh_icon) by PixelKit
+- [pip-check-updates](https://pypi.org/project/pip-check-updates/)
