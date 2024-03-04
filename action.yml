@@ -5,6 +5,10 @@ inputs:
     description: "dependency file"
     required: false
     default: "requirements.txt"
+  branch:
+    description: "branch name"
+    required: false
+    default: "pcu-pr"
 runs:
   using: "composite"
   steps:
@@ -22,7 +26,7 @@ runs:
         committer: GitHub <noreply@github.com>
         author: pcu-bot <pcu-bot@users.noreply.github.com>
         signoff: false
-        branch: pcu-pr
+        branch: ${{ inputs.branch }}
         delete-branch: true
         title: "[pcu] Refresh Deps"
 branding:
