@@ -30,12 +30,11 @@ Or for Conda
 
 It will update the libraries specified in the file from `path`.
 
-Or with an extra dependency file
+To modify branch name
 
     - uses: zehengl/refresh-python-dependency@v0.2.0
       with:
-        path: requirements1.txt
-        extra_path: requirements2.txt
+        branch: refresh-deps
 
 ## Example
 
@@ -49,7 +48,7 @@ Or with an extra dependency file
       refreshDeps:
         runs-on: ubuntu-latest
         steps:
-          - uses: zehengl/refresh-python-dependency@v0.2.0
+          - uses: zehengl/refresh-python-dependency@v0.3.0
             with:
               path: requirements-dev.txt
 
