@@ -9,6 +9,11 @@ inputs:
     description: "branch name"
     required: false
     default: "pcu-pr"
+  commit:
+    description: "commit changes"
+    type: boolean
+    required: false
+    default: true
 runs:
   using: "composite"
   steps:
@@ -20,6 +25,7 @@ runs:
         pip install pip-check-updates
         pcu ${{ inputs.path }} -u --loggable
     - name: Create Pull Request
+      if: ${{ inputs.commit }}
       uses: peter-evans/create-pull-request@v4
       with:
         commit-message: refresh deps
