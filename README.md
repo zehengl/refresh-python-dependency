@@ -54,7 +54,7 @@ In case not to commit
       refreshDeps:
         runs-on: ubuntu-latest
         steps:
-          - uses: zehengl/refresh-python-dependency@v0.3.0
+          - uses: zehengl/refresh-python-dependency@v0.4.0
             with:
               path: requirements-dev.txt
 
