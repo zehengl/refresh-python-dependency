@@ -12,19 +12,19 @@ A GitHub action to create a pull request for refreshing the dependency file in y
 
     - uses: zehengl/refresh-python-dependency@main
 
-It will update the libraries specified a `requirements.txt` file.
+It will update the libraries specified in a `requirements.txt` file.
 
 ### Custom
 
 For PyPi
 
-    - uses: zehengl/refresh-python-dependency@v0.3.0
+    - uses: zehengl/refresh-python-dependency@v0.4.0
       with:
         path: requirements-dev.txt
 
 Or for Conda
 
-    - uses: zehengl/refresh-python-dependency@v0.3.0
+    - uses: zehengl/refresh-python-dependency@v0.4.0
       with:
         path: environment.yml
 
@@ -32,9 +32,15 @@ It will update the libraries specified in the file from `path`.
 
 To modify branch name
 
-    - uses: zehengl/refresh-python-dependency@v0.3.0
+    - uses: zehengl/refresh-python-dependency@v0.4.0
       with:
         branch: refresh-deps
+
+In case not to commit
+
+    - uses: zehengl/refresh-python-dependency@v0.4.0
+      with:
+        commit: false
 
 ## Example
 
