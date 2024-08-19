@@ -36,12 +36,6 @@ To modify branch name
       with:
         branch: refresh-deps
 
-In case not to commit
-
-    - uses: zehengl/refresh-python-dependency@v0.5.0
-      with:
-        commit: false
-
 ## Example
 
     name: pcu
