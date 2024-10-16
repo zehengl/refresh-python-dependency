@@ -21,6 +21,7 @@ runs:
         source .pcu-venv/bin/activate
         pip install pip-check-updates
         pcu ${{ inputs.path }} -u --loggable
+        rm -rf .pcu-venv
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v7
       with:
