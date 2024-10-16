@@ -18,13 +18,13 @@ It will update the libraries specified in a `requirements.txt` file.
 
 For PyPi
 
-    - uses: zehengl/refresh-python-dependency@v0.5.0
+    - uses: zehengl/refresh-python-dependency@v0.6.0
       with:
         path: requirements-dev.txt
 
 Or for Conda
 
-    - uses: zehengl/refresh-python-dependency@v0.5.0
+    - uses: zehengl/refresh-python-dependency@v0.6.0
       with:
         path: environment.yml
 
@@ -32,7 +32,7 @@ It will update the libraries specified in the file from `path`.
 
 To modify branch name
 
-    - uses: zehengl/refresh-python-dependency@v0.5.0
+    - uses: zehengl/refresh-python-dependency@v0.6.0
       with:
         branch: refresh-deps
 
@@ -48,7 +48,7 @@ To modify branch name
       refreshDeps:
         runs-on: ubuntu-latest
         steps:
-          - uses: zehengl/refresh-python-dependency@v0.5.0
+          - uses: zehengl/refresh-python-dependency@v0.6.0
             with:
               path: requirements-dev.txt
 
