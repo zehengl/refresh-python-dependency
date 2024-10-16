@@ -17,6 +17,8 @@ runs:
     - name: Run pip-check-updates
       shell: bash
       run: |
+        python -m venv .pcu-venv
+        source .pcu-venv/bin/activate
         pip install pip-check-updates
         pcu ${{ inputs.path }} -u --loggable
     - name: Create Pull Request
