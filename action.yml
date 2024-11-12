@@ -32,6 +32,7 @@ runs:
         branch: ${{ inputs.branch }}
         delete-branch: true
         title: "[pcu] Refresh Deps"
+        body: Automated changes by [refresh-python-dependency](https://github.com/zehengl/refresh-python-dependency) GitHub action
 branding:
   icon: "box"
   color: "purple"
