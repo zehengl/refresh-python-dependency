@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://cdn2.iconfinder.com/data/icons/flat-jewels-icon-set/512/0000_Refresh.png" alt="logo" height="128">
+    <img src="https://raw.githubusercontent.com/zehengl/pip-check-updates/refs/heads/main/logo.png" alt="logo" height="128">
 </div>
 
 # refresh-python-dependency
@@ -54,5 +54,4 @@ To modify branch name
 
 ## Credits
 
-- [Icon](https://www.iconfinder.com/icons/171269/refresh_icon) by PixelKit
 - [pip-check-updates](https://pypi.org/project/pip-check-updates/)
